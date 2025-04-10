@@ -10,7 +10,7 @@
    
 
     <header>
-        <h1>GrowSync</h1>
+        <h1>Vivero la Reina</h1>
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
