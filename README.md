@@ -1,9 +1,6 @@
 # Proyecto Web
-Proyecto para la clase de Ambiente Web Cliente / Servidor
+Proyecto GrowSync
 
 ## Miembros
 
--Jessica Porras
--Luis Solano
--Juan Carlos Sanchez
-- Jenipher Arce 
+-Jessica Porras -Luis Solano -Juan Carlos Sanchez - Jenipher Arce 
