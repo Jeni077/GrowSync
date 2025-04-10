@@ -3,7 +3,7 @@ Proyecto para la clase de Ambiente Web Cliente / Servidor
 
 ## Miembros
 
-- Jeffry Samuel Eduarte Rojas
-- Kevin Javier Soto Bolaños
-- Mairin María Chaves López 
-- Jenipher Arce Monestel
+-Jessica Porras
+-Luis Solano
+-Juan Carlos Sanchez
+- Jenipher Arce 
