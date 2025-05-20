@@ -11,9 +11,9 @@ body {
 }
 
 header {
-  background-color: #2ff02f;
-  color: #fff;
-  padding: 15px 0;
+  background-color: #236823;
+  color: #ffffff;
+  padding: 5px 0;
   text-align: center;
 }
 
@@ -35,7 +35,7 @@ nav ul li {
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 5px 5px;
   border-radius: 3px;
 }
 
@@ -85,7 +85,7 @@ main {
 
 section {
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: #F5EEDC;
   padding: 20px;
   border-radius: 5px;
 }
@@ -369,4 +369,64 @@ div#perfil-container > span {
 
 div#perfil-container > span > b {
   flex-grow: 1;
+}
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3, h4 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.btn-success {
+  border-radius: 30px;
+  padding: 10px 25px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;  /* Aumentado el espacio entre productos y total */
+}
+
+.total-container h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4CAF50;
+}
+
+.btn-danger {
+  border-radius: 20px;
+}
+
+.section-spacing {
+  margin-bottom: 40px;  /* Espaciado entre el carrito y el total */
 }

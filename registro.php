@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OrgánicoCR - Registro</title>
+    <title>Vivero La Reina - Registro</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="css/estilos.css" rel="stylesheet" type="text/css" />
@@ -22,22 +22,11 @@
     ?>
 
     <header>
-        <h1>Orgánico CR</h1>
-        <nav>
-            <ul>
-                <li><a href="./">Inicio</a></li>
-                <li><a href="nosotros">Nosotros</a></li>
-                <li><a href="productos">Productos</a></li>
-                <li><a href="servicios">Servicios</a></li>
-                <li><a href="nosotros#contacto">Contacto</a></li>
-            </ul>
+    <h1>Vivero la Reina</h1>
+    <nav>
             <div class="nav-buttons">
-                <?php if (isset($_SESSION['usuario'])): ?>
-                    <a class="btn btn-outline-light" href="logout.php">Cerrar Sesión</a>
-                <?php else: ?>
                     <a class="btn btn-outline-light" href="ingresar.php">Iniciar Sesión</a>
                     <a class="btn btn-light" href="registro.php">Registrarte</a>
-                <?php endif; ?>
             </div>
         </nav>
     </header>
@@ -82,5 +71,8 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+    <footer class="footer">
+        <p>&copy; 2024 La Reina S.A Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

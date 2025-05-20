@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Orgánico CR</title>
+    <title>Servicios </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +18,7 @@
     <header class="header" style="background-color: #2c5f2c;">
         <nav class="navbar navbar-expand-lg" style="background-color: #2c5f2c;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../" style="color: white;">Orgánico CR</a>
+                <a class="navbar-brand" href="../" style="color: white;"> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,6 +39,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../nosotros#contacto" style="color: white;">Contacto</a>
                         </li>
+                        <a class="nav-link" href="../controles" style="color: white;">Controles</a></li>              
+
                     </ul>
                     <div class="d-flex">
                         <?php if ($isLoggedIn): ?>
@@ -56,7 +58,7 @@
     
     <div class="container mt-5" style="max-width: 80vmax;">
         <h2 class="text-center">Servicios</h2>
-        <p class="text-center">En Orgánico CR ofrecemos multiples servicios para clientes individuales y empresas.</p>     
+        <p class="text-center">En este vivero ofrecemos multiples servicios para clientes individuales y empresas.</p>     
         <section id="servicios" style="background: url('images/15.jpg')    fixed; background-size: cover;   background-color: #8abf76;">
             <div class="service-container" style="flex-wrap: nowrap;">
                 <div class="service-box">
@@ -79,7 +81,7 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 Orgánico CR. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Vivero La Reina. Todos los derechos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

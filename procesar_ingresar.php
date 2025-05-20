@@ -1,41 +1,18 @@
 <?php
 session_start();
-include("config/db/db.php");
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $usuario = $_POST["usuario"] ?? '';
-    $clave = $_POST["clave"] ?? '';
+// Obtener los datos del formulario
+$usuario = $_POST['usuario'];
+$password = $_POST['password'];
 
-    if (empty($usuario) || empty($clave)) {
-        $_SESSION['message'] = "Por favor, ingrese ambos campos.";
-        header('Location: ingresar.php');
-        exit();
-    }
-
-    $stmt = $conn->prepare("SELECT * FROM usuarios WHERE email = ?");
-    $stmt->bind_param("s", $usuario);
-    $stmt->execute();
-    $result = $stmt->get_result();
-
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        if (password_verify($clave, $row["password"])) {
-            $_SESSION["usuario"] = $usuario;
-            $_SESSION["usuario_id"] = $row["id"];
-            $_SESSION["role"] = $row["role"];
-            header('Location: index.php');
-            exit();
-        } else {
-            $_SESSION['message'] = "Contraseña incorrecta.";
-            header('Location: ingresar.php');
-            exit();
-        }
-    } else {
-        $_SESSION['message'] = "No existe el usuario.";
-        header('Location: ingresar.php');
-        exit();
-    }
-
-    $stmt->close();
-    $conn->close();
+// Validar usuario y contraseña (puedes colocar valores fijos como ejemplo)
+if ($usuario == 'admin' && $password == '12345') {
+    $_SESSION['usuario'] = $usuario;  // Guardar en la sesión
+    header('Location: index.php');     // Redirigir al index.php
+    exit();
+} else {
+    echo "Credenciales incorrectas. Intenta nuevamente.";
+    // Puedes agregar un enlace para volver a intentar login
+    echo '<br><a href="ingresar.php">Volver al login</a>';
 }
+?>
